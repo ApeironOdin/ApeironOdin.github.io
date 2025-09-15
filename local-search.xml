@@ -8,7 +8,7 @@
     <link href="/2025/09/15/%E9%B1%BC%E4%B9%A6%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
     <url>/2025/09/15/%E9%B1%BC%E4%B9%A6%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</url>
     
-    <content type="html"><![CDATA[<p>分享一下我刚入门深度学习的时候的启蒙读物。斋藤康毅老师的《深度学习入门–基于python的理论与实践》（鱼书）讲的真的很通俗，它不能教你如何写出高性能的神经网络模型，但是对于一个刚入门的小白来说，读完鱼书你一定能理解深度学习的由来、原理和应用。</p><p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8712.png"></p><p>下面分享我用鱼书自学的时候画的思维导图：</p><div class="row">    <embed src="/pdf/dl_fish.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+    <content type="html"><![CDATA[<p>分享一下我刚入门深度学习的时候的启蒙读物。斋藤康毅老师的《深度学习入门–基于python的理论与实践》（鱼书）讲的真的很通俗，它不能教你如何写出高性能的神经网络模型，但是对于一个刚入门的小白来说，读完鱼书你一定能理解深度学习的由来、原理和应用。</p><p><img src="/img/engineer/12.png"></p><p>下面分享我用鱼书自学的时候画的思维导图：</p><div class="row">    <embed src="/pdf/dl_fish.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
     
     
     
@@ -33,9 +33,9 @@
     
     <tags>
       
-      <tag>DL</tag>
-      
       <tag>ACM</tag>
+      
+      <tag>DL</tag>
       
       <tag>CV</tag>
       
