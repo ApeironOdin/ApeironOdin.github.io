@@ -1,0 +1,539 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/A.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Apeiron">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="给想入门成为一名算法工程师的所有朋友一些自己的经验和建议，分为程序设计、神经网络、计算机视觉三个大模块聊聊我学习规划和建议">
+<meta property="og:type" content="website">
+<meta property="og:title" content="算法工程师入门指南（不一定更新）">
+<meta property="og:url" content="https://apeironblog.com/article-CV/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.html">
+<meta property="og:site_name" content="Apeironverse">
+<meta property="og:description" content="给想入门成为一名算法工程师的所有朋友一些自己的经验和建议，分为程序设计、神经网络、计算机视觉三个大模块聊聊我学习规划和建议">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://apeironblog.com/img/Isla.png">
+<meta property="article:published_time" content="2025-09-15T15:23:32.327Z">
+<meta property="article:modified_time" content="2025-09-15T15:23:32.327Z">
+<meta property="article:author" content="Apeiron">
+<meta property="article:tag" content="ACM">
+<meta property="article:tag" content="DL">
+<meta property="article:tag" content="CV">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://apeironblog.com/img/Isla.png">
+  
+  
+  
+  <title>算法工程师入门指南（不一定更新） - Apeironverse</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"apeironblog.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":1.5},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 60vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Apeironverse</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-book"></i>
+                <span>Article</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/article-ACM" target="_self">
+                    
+                    <span>ACM程序设计</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/article-DL" target="_self">
+                    
+                    <span>DL深度学习</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/article-CV" target="_self">
+                    
+                    <span>CV计算机视觉</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/work/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Work</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/comments/" target="_self">
+                <i class="iconfont icon-comment"></i>
+                <span>Comments</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/log/" target="_self">
+                <i class="iconfont icon-note"></i>
+                <span>Log</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="算法工程师入门指南（不一定更新）"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<article class="page-content">
+  <h1 id="算法工程师入门指南"><a href="#算法工程师入门指南" class="headerlink" title="算法工程师入门指南"></a>算法工程师入门指南</h1><p>By. Apeiron</p>
+<p>算法，在数学（算学）和计算机科学之中，指一个被定义好的、计算机可施行的有限步骤或次序，常用于计算、数据处理和自动推理。按照我个人的理解，算法是数学的思维和决策在计算机程序上的体现。</p>
+<p>初识算法，也许你感觉它像数学一样抽象晦涩，而且看起来没什么实际应用。因此在考虑入坑算法世界之前，你可以先感受一下算法的力量：</p>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%871.jpg" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>​                                 网约车调度系统是程序设计算法中最小费用最大流问题</li>
+</ul>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%872.jpg" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>​								 数字密码设计用到了程序设计算法中的素数筛和欧拉算法</li>
+</ul>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%873.png" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>​                             无人驾驶技术用到了计算机视觉中的目标识别和图像处理算法</li>
+</ul>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%874.png" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>​                          大语言模型ChatGPT是深度学习算法中大语言模型的成功应用之一</li>
+</ul>
+<p>可以看到，不仅我们在日常生活中（外卖调度、数字密码、导航路线、列车与航班规划等）离不开算法，当下的无人自动驾驶和AI人工智能热潮，仍然由算法引领。算法是一个注重思维和逻辑的学科领域，即使你以后不从事相关工作，你从算法中学到的思考方式，也会使你在未来收益。</p>
+<p>看到这里，如果你对学习算法燃起了一点热情，那么让我们继续深入了解一下算法的各个方向：</p>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%875.png" srcset="/img/loading.gif" lazyload></p>
+<p>算法讲师左程云老师将算法分类为硬算法和软算法，这是按照算法处理的问题类型。一般硬算法处理的问题有着严格的输入和输出要求，比如对于信息的序列化和反序列化；软算法处理的问题更偏向于追求最优解而不是精确解，比如手写数字识别和最佳旅行路径规划。</p>
+<p>而软算法中又按照软件和硬件划分出神经网络领域和计算机视觉领域，神经网络领域是深度学习的内核，是目前最前沿的学科领域之一；计算机视觉领域是深度学习的应用，是机器人工程的“眼睛”。</p>
+<p>如果你是大一才入门算法，我不建议你既要又要，你可以自己再去查阅和了解相关方向后，专注于一个方向学习和发展，泛学千门不如精通一技（虽然我好像没资格这么说教），你可以完整阅读完本指南全文，对每个方向的学习路线和发展前景都有一定了解后再做出选择。</p>
+<h2 id="1-基础部分"><a href="#1-基础部分" class="headerlink" title="1.  基础部分"></a>1.  基础部分</h2><p>无论你学习哪个方向，都应该熟练掌握至少一门编程语言。而所有编程语言中，学习C&#x2F;C++无疑是最佳的选择，直到今天，仍然有许多项目由C&#x2F;C++语言编写。掌握C&#x2F;C++语言也有助于你更快学习其他编程语言，即使你曾经学习过Java，Python等语言，我仍然建议你先学习C&#x2F;C++语言，C&#x2F;C++被广泛用于项目底层的另一个重要原因就是它的编译速度是其他语言所不能比拟的。</p>
+<h4 id="1-选择一个合适的C-C-ide（集成开发环境）"><a href="#1-选择一个合适的C-C-ide（集成开发环境）" class="headerlink" title="1.选择一个合适的C&#x2F;C++ ide（集成开发环境）"></a>1.选择一个合适的C&#x2F;C++ ide（集成开发环境）</h4><p>众所周知，假如你跟着学校学习C++课程，那你的学习配置大概率是谭浩强C++教材配上机房里古老的VC6.0编译器（连括号补全都没有），因此你需要自行选择一款ide（一切的前提都是你的电脑是windows系统，如果你的电脑是Mac或者其它某系统，那么你最好的选择是尽快换成windows）。</p>
+<p>初学者如果想尽快上手开始学编程，建议用Dev-C++或者小熊猫C++，下载安装了就可以直接用，无需配环境。Dev-C++是蓝桥杯程序设计赛道C&#x2F;C++组官方指定的ide。</p>
+<p>如果你愿意尝试新事物且有一定的自主上网查阅和解决问题的能力，我推荐你去试试Visual Studio Code（是vsc，不是vs，不是Visual Studio！），自己试着安装编译器，自己试着调一下环境配置文件。VSC是万能ide，适配多种语言，可玩自由度高，因为它有很多很好用的插件。</p>
+<p>Dev-C++官网下载：<a target="_blank" rel="noopener" href="https://sourceforge.net/projects/orwelldevcpp/">Dev-C++ download | SourceForge.net</a></p>
+<p>小熊猫C++官网下载：<a target="_blank" rel="noopener" href="http://royqh.net/redpandacpp/download/">http://royqh.net/redpandacpp/download/</a></p>
+<p>Visual Studio Code官网下载：<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code - Code Editing. Redefined</a> </p>
+<p>VSC 环境配置教程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/mie9/p/17962241">VS Code的C&#x2F;C++环境配置的傻瓜式教程(看这一篇就够了) - 咩sir - 博客园</a></p>
+<h4 id="2-选择合适的C-C-教程"><a href="#2-选择合适的C-C-教程" class="headerlink" title="2.选择合适的C&#x2F;C++教程"></a>2.选择合适的C&#x2F;C++教程</h4><p>下面推荐几个C&#x2F;C++入门教程，无论你选择什么方向，关于C&#x2F;C++语言都应该至少掌握到函数、指针和结构体章节。</p>
+<p>C语言教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17s411N78s/?spm_id_from=333.337.search-card.all.click">【C语言】《带你学C带你飞》_哔哩哔哩_bilibili</a></p>
+<p>C语言教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dr4y1n7vA/?spm_id_from=333.337.search-card.all.click">浙江大学翁恺教你C语言程序设计！C语言基础入门！_哔哩哔哩_bilibili</a></p>
+<p>C++语言教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1et411b73Z/?spm_id_from=333.337.search-card.all.click">黑马程序员匠心之作|C++教程从0到1入门编程,学习编程不再难_哔哩哔哩_bilibili</a></p>
+<p>如果你对自己的学习能力有信心，可以试着读一下《C Primer Plus》或者《C++ primer plus》。不要觉得不可能，23级有一位搞计算机视觉的学长在大一真的把《C Primer Plus》一本给看完了，看完一本书对你在编程语言上的影响是非常大的，当然是在有能力的情况下。</p>
+<h4 id="3-选择合适的代码刷题网站"><a href="#3-选择合适的代码刷题网站" class="headerlink" title="3.选择合适的代码刷题网站"></a>3.选择合适的代码刷题网站</h4><p>刷题网站只是为了巩固你们对于编程语言的掌握，你们熟练写代码了以后大一的C&#x2F;C++语言课对你们来说就很轻松了。</p>
+<p>牛客网：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/">https://ac.nowcoder.com/</a></p>
+<p>PTA：<a target="_blank" rel="noopener" href="https://pintia.cn/home">https://pintia.cn/home</a></p>
+<p>洛谷：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/">https://www.luogu.com.cn/</a></p>
+<h4 id="4-其他注意点"><a href="#4-其他注意点" class="headerlink" title="4.其他注意点"></a>4.其他注意点</h4><p>善用搜索引擎，善用ai。这两年来，ai改变了很多很多，必不可免地改变了大学生竞赛的环境，老实说，我们已经回不到没有ai的时候了，也无法禁止使用ai，但是我不希望看到ai杀死现在的年轻人本就孱弱的网络学习能力。依赖ai是一种病，你可以在比赛中用ai写论文，用ai写代码，但是如果在你的初学入门阶段你就放弃自己动手而妄想依赖ai，那么你的学习之路注定走不长远。刚开始，一定要多逼自己动手一个字一个字敲代码。</p>
+<h2 id="2-程序设计算法入门"><a href="#2-程序设计算法入门" class="headerlink" title="2.  程序设计算法入门"></a>2.  程序设计算法入门</h2><p>大学生程序设计竞赛，是所有大学生竞赛当中，最公平公正的比赛，几乎没有之一（好像还有一个数学竞赛），更是所有竞赛当中难度最高、训练量最大、含金量最高的比赛。</p>
+<p>说它是最公平的比赛，是因为它不同于PPT竞赛，不同于建模竞赛，也不同于实物赛，这是一个完全没有评委、无法黑箱操作的比赛。比赛时长3-6小时，在acm赛制中实时更新排名榜单。按照CUSTACM校队的王老师的话来说：“真到了比赛的时候，你会做就是会做，不会做就是不会做，榜单是不会骗人的”。</p>
+<p>说它最难，是因为当你走出学校后，面对的都是来自985、211甚至清北华五名校的信息竞赛高手以及保送生，他们也许从小学就开始打信息竞赛，acm比赛是重点高校最喜爱的比赛之一。ACM-ICPC比赛的终点是World Final（虽然整个中国能走到那里的学校都寥寥无几），这是比互联网+更真实的国际级赛事。</p>
+<p> <img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8728.jpg" srcset="/img/loading.gif" lazyload></p>
+<p>ACM赛制：每题提交后有反馈，可以查看错误类型但是看不到未通过样例，需要通过所有样例才算本题通过，以最后一次提交为准，提交未通过有罚时机制</p>
+<p>OI赛制：每题提交后没有反馈，按照通过样例的个数得分，可以多次提交没有罚时，以最后一次提交为准，最后汇总计算总得分</p>
+<p>IOI赛制：每道题提交后有反馈，可以查看错误类型和该题得分，但是看不到未通过样例，没有罚时机制</p>
+<p>**注：**有些程序设计比赛采用校队制，不通过校赛选拔比赛队员。</p>
+<p>更多详情：<a target="_blank" rel="noopener" href="https://oi-wiki.org/">OI Wiki - OI Wiki</a></p>
+<h4 id="1-程序设计算法入门"><a href="#1-程序设计算法入门" class="headerlink" title="1.程序设计算法入门"></a>1.程序设计算法入门</h4><p>在学会基本的C&#x2F;C++语法之后，你可以去学习一些C++的标准库（C和C++之间的切换还是很容易的，如果你选择走程序设计竞赛的路线，建议学习C++），比如vector，queue，stack，set等容器，以及像排序、暴力遍历、模拟的基础算法。</p>
+<p>对于完整详细的算法教程，我推荐从入门到入土、天下第一的程序设计b站网课—左程云算法通关课：</p>
+<p>​		<a target="_blank" rel="noopener" href="https://space.bilibili.com/8888480/lists/3509640?type=series">https://space.bilibili.com/8888480/lists/3509640?type=series</a></p>
+<p>左程云老师的课虽然是Java实现，但是丝毫不影响你学习他的算法，就像开篇说的，算法是一种思维。</p>
+<h4 id="2-刷题与训练"><a href="#2-刷题与训练" class="headerlink" title="2.刷题与训练"></a>2.刷题与训练</h4><p>程序设计算法的知识体系非常庞大，不建议硬啃书或者网课，应该结合刷题，在写题和补题的过程中逐渐完善自己的算法能力，要养成遇到什么学什么的好习惯。下面推荐几个程序设计竞赛刷题用的比赛网站：</p>
+<p>​		Codeforce：<a target="_blank" rel="noopener" href="https://codeforces.com/">https://codeforces.com/</a></p>
+<p>​		AtCoder：<a target="_blank" rel="noopener" href="https://atcoder.jp/">https://atcoder.jp/</a></p>
+<p>还有前面已经给出的的牛客和洛谷。下面是cf和洛谷题的难度对比：</p>
+<p> <img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8711.png" srcset="/img/loading.gif" lazyload></p>
+<p>欢迎加入ACM校队，你将在这里会开启你作为程序员的荣耀之路。</p>
+<h2 id="3-深度学习算法入门"><a href="#3-深度学习算法入门" class="headerlink" title="3.  深度学习算法入门"></a>3.  深度学习算法入门</h2><p>深度学习分为神经网络与计算机视觉两个领域。神经网络偏软件，一般用来打创赛商业赛比较多，或者搞科研发paper；计算机视觉偏硬件，一般用来打实物赛较多，关于计算机视觉能打的比赛实在太多太多了，就不一一列举出来了，几乎每个工科都有自己的实物赛。</p>
+<p>无论你是想往神经网络方向发展，还是往计算机视觉方向发展，你都应该学习神经网络的基本原理，都应该了解深度学习的基本框架。</p>
+<p>对于深度学习方向，由于其工程量通常非常的庞大，我们不得不放弃一些计算速度，去追求更高效的写代码效率，这要求我们学习一门新的语言——Python。不要害怕，如果你能很好掌握C&#x2F;C++语言，学完Python只需要几天的时间就够了，Python的学习和使用都比C&#x2F;C++要简洁容易的多。</p>
+<p>要提前说明的是，如果你想选择深度学习方向，你的电脑上最好有一块独立显卡，而且要求是英伟达的显卡，因为深度学习的模型训练需要英伟达公司显卡的Cuda。如果你没有英伟达独立显卡，也可以选择从阿里云等平台租借显卡算力来跑你的模型。</p>
+<h4 id="1-配置深度学习所需要的虚拟环境，和学习基本的python及第三方库"><a href="#1-配置深度学习所需要的虚拟环境，和学习基本的python及第三方库" class="headerlink" title="1.配置深度学习所需要的虚拟环境，和学习基本的python及第三方库"></a>1.配置深度学习所需要的虚拟环境，和学习基本的python及第三方库</h4><p>不仅是深度学习方向，哪怕是单片机嵌入式开发方向，软件开发方向等等，只要你入了计算机程序员的门，就要学会配环境，这个过程可能很漫长，你会遇到各种各样的问题，能否解决好这些问题，是你是否能坚持学习好一项技术的标志，我见过太多人在环境配置这一步倒下了，希望你可以坚持下去，一回生二回熟，你也不可能只配一次环境，这种难度只是你在学习技术之路上的一道开胃小菜罢了。下面是配置环境的教程：</p>
+<p>​		<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1cD4y1H7Tk/?spm_id_from=333.999.0.0">Python深度学习：安装Anaconda、PyTorch（GPU版）库与PyCharm_哔哩哔哩_bilibili</a></p>
+<p>杰哥这一系列视频包含了环境配置、python学习、numpy库学习、pandas库学习、matplotlib库学习，以及DNN、CNN两种神经网络的快速代码教程。如果你能听的下来最好，最少要求把第一个视频也就是anaconda环境配置完成，至于后面的python等内容的学习可以重新去找教程</p>
+<h4 id="2-学习深度学习基本概念"><a href="#2-学习深度学习基本概念" class="headerlink" title="2.学习深度学习基本概念"></a>2.学习深度学习基本概念</h4><p>为了了解深度学习的基本框架和底层原理，建议读《深度学习入门-基于Python的理论和实现》（鱼书），这本书详细到导数的定义都重新帮你温习一遍。顺便一提，鱼书中也有关于Pyhon及第三方库内容的讲解。</p>
+<p>需要注意的是，我们以后并不按照鱼书中的方式写神经网络，因为它使用numpy从最基础徒手开始搓网络。但现实中我们会利用Python的另一个优势：丰富的第三方库，使用为深度学习服务的Pytorch库或者TenserFlow库写神经网络。</p>
+<p>如果你能坚持到这一步，你就已经有了扎实的深度学习概念基础，可以选择继续深造理论，或是开始投身于应用领域。但是其实一般实验室中对于深度学习算法方向的考核，神经网络和计算机视觉方向都会有所涉及，可以先都往下学，再看看自己对哪一个更感兴趣。</p>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8729.png" srcset="/img/loading.gif" lazyload></p>
+<p>右图是我当时看鱼书的时候写的思维导图（部分），如果你有余力的话建议也做一个自己的思维导图。看鱼书花不了很长时间，这本书挺小的。</p>
+<h3 id="3-1-神经网络算法入门"><a href="#3-1-神经网络算法入门" class="headerlink" title="3.1.    神经网络算法入门"></a>3.1.    神经网络算法入门</h3><p>大学中神经网络方向的技术现在大多被用来打一些建模赛、创赛、或者PPT比赛，也有用于发paper的。很多院系的创赛项目都想和人工智能深度学习沾上一些关系，真正钻研神经网络的人少之又少，几乎快沦为很多水赛的玩物了，当然这也是很多学生的选择之一。</p>
+<p>我的意思是，当你踏上了这条路，你几乎只能自学，能给到你实质性帮助的导师和朋辈会越来越少，这是一条极具未来发展潜力的道路，也是一条荆棘丛生的道路。</p>
+<p>如果你能够计划花很长一段时间脚踏实地地学习神经网络，建议去看李沐老师的《动手学深度学习》（建议看pytorch版本），或者吴恩达老师的深度学习课程，这些课程大多是斯坦福公开课之类的教材或者网课，学习难度比较大，需要一段时间，当你能学完它们以后，相信你已经有可以查阅并粗读深度学习理论论文并能够很好地进行相关科研任务了。</p>
+<p>以下是《动手学深度学习》（花书）以及一些其他推荐的书目：</p>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8730.png" srcset="/img/loading.gif" lazyload></p>
+<p>学习这个方向最快的方法就是从Github上、从Gitee上、从CSDN上，从B站上扒一些项目下来复刻。比如上面杰哥的视频就是很好的例子，去模仿别人的代码写一个神经网络出来，可以去写垃圾分类的神经网络，也可以去复刻往年井盖识别的项目，这些在网上都找得到，甚至你可以从最简单的手写数字识别开始学起</p>
+<p>这个方法的优点就是快速学习，快速上手，缺点也很显著，你接触的神经网络类型不全面，也可能会变得只会搬代码。这需要你们自己去权衡利弊和坚持自我。面对实验室考核，复刻项目是行之有效的办法之一。</p>
+<p>不要因为无法系统学习而抛弃这种方法，神经网络算法和程序设计算法一样，算法是一门浩瀚的学科，你不可能永远抱着书本闭门造车。“有需求才是学习的动力”，去参加实验室考核，去打比赛，去做项目，等你需要用到什么就去学什么，觉得有过一些实战经验了，再回头看书，会豁然开朗很多，下面给几个神经网络的教程视频，自己选择性观看：</p>
+<p>土堆-Pytorch教学：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.1387.homepage.video_card.click">PyTorch深度学习快速入门教程（绝对通俗易懂！）【小土堆】_哔哩哔哩_bilibili</a></p>
+<p>Transformer模型教学：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ma4y1g791/?spm_id_from=333.1387.upload.video_card.click">【手把手带你实战HuggingFace Transformers-入门篇】基础知识与环境安装_哔哩哔哩_bilibili</a></p>
+<p>李沐《动手学深度学习》系列网课：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1if4y147hS/?spm_id_from=333.1387.collection.video_card.click">00 预告【动手学深度学习v2】_哔哩哔哩_bilibili</a></p>
+<p>咕泡-Pytorch教学：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yu41147eD/?spm_id_from=333.1387.homepage.video_card.click">比刷剧还爽！2023公认最通俗易懂的【PyTorch】入门到实战！200集付费课程（附代码）人工智能_机器学习_深度学习_咕泡程序员_哔哩哔哩_bilibili</a></p>
+<p>（咕泡有很多关于机器学习和深度学习基础的专题视频，我是没看下去，你们可以去找找，说不定适合你们，如果前面的鱼书读不下去就去看网课，虽然我还是更推荐看鱼书）</p>
+<h3 id="3-2-计算机视觉入门"><a href="#3-2-计算机视觉入门" class="headerlink" title="3.2.    计算机视觉入门"></a>3.2.    计算机视觉入门</h3><p>在深度学习中，一个深度学习任务的具体流程是：</p>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8718.png" srcset="/img/loading.gif" lazyload></p>
+<h4 id="1-学习制作数据集"><a href="#1-学习制作数据集" class="headerlink" title="1.学习制作数据集"></a>1.学习制作数据集</h4><p>计算机视觉需要落地，需要投入实际应用，因此计算机视觉并不关注理论，而是关注其应用效果。这四个步骤构成的深度学习任务流程中，比起搭建神经网络更重要的是数据集部分，它决定了整个模型的上限。</p>
+<p>制作数据集的重要性和注意点在前面介绍的书籍中都有提到。Anaconda公司做过统计：“深度学习领域中，科学家七成的工作都在清洗数据”，数据集制作是一个非常麻烦、费时，但是又非常重要的步骤。</p>
+<p>不同于PPT大赛或者建模大赛中，自建神经网络的数据集总是已给好的，只需要进行一定程度的数据预处理就好。对于实物赛中的计算机视觉手来说，所有数据集都需要根据比赛的需求从零开始建起。关于这一点的重要性，会在你们之后打比赛的时候越发有体会。</p>
+<h4 id="2-学习使用OpenCV"><a href="#2-学习使用OpenCV" class="headerlink" title="2.学习使用OpenCV"></a>2.学习使用OpenCV</h4><p>OpenCV是图像处理的代码工具。你可以理解为通过代码来实现你平时用的美图秀秀或者Photoshop功能。OpenCV技术通常决定一个计算机视觉手的上限，它的功能非常的强大。</p>
+<p>对于OpenCV，主要有两种代码实现，C++或者Python，过去实验室当中更多的是用Python的，而在实物赛的实战赛场中，Python相较于C++的速度劣势就愈发明显了。</p>
+<p>因此我在这里提供OpenCV的两种代码实现教程，希望你们在学完比较简单的Python实现后，也能去尝试实现C++实现，这在比赛中是一个非常大的优势。</p>
+<p>Python实现OpenCV：</p>
+<p>​		<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1BT4y1Z7WS/?spm_id_from=333.1387.homepage.video_card.click">OpenCV Python 图像处理 30分钟 入门课程_哔哩哔哩_bilibili</a></p>
+<p>​		<a target="_blank" rel="noopener" href="https://www.runoob.com/opencv/opencv-tutorial.html">OpenCV 教程 | 菜鸟教程</a></p>
+<p>​		<a target="_blank" rel="noopener" href="https://opencv.apachecn.org/">【布客】OpenCV 4.0.0 中文翻译</a></p>
+<p>C++实现OpenCV：</p>
+<p>​		<a target="_blank" rel="noopener" href="https://www.runoob.com/opencv/opencv-tutorial.html">OpenCV 教程 | 菜鸟教程</a></p>
+<p>​		<a target="_blank" rel="noopener" href="https://docs.opencv.ac.cn/4.12.0/d1/dfb/intro.html">OpenCV：简介 - OpenCV 计算机视觉库</a></p>
+<h4 id="3-学习部署YOLO模型"><a href="#3-学习部署YOLO模型" class="headerlink" title="3.学习部署YOLO模型"></a>3.学习部署YOLO模型</h4><p>神经网络方向最关注的是搭建模型部分。由于计算机视觉偏应用，因此我们所使用的模型大多为开源现成的模型——YOLO模型（You Only Look Once），这是一个端到端（end to end）的非常成熟的图像视觉处理模型。目前应用最广的是YOLOv8 和 YOLOv5版本：</p>
+<p>​		YOLO（已改名ultralytics）官网：<a target="_blank" rel="noopener" href="https://docs.ultralytics.com/zh/">https://docs.ultralytics.com/zh/</a></p>
+<p>​		YOLOv8部署教程（早期版本，但是能看）：</p>
+<p>​		<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13V4y1S7MK/?spm_id_from=333.1387.upload.video_card.click">【手把手带你实战YOLOv8-入门篇】YOLOv8 环境安装_哔哩哔哩_bilibili</a></p>
+<p>同样，对于YOLO模型可以在Python环境上进行训练，但是到部署和推理环节的时候，我希望你们能用C++去实现。</p>
+<p>​		**注：**以上所说的C++实现OpenCV和YOLO模型部署推理，都不是必需项，它们只起到锦上添花的作用，我提前和你们说明是让你们有一个印象，知道一下计算机视觉也有C++实现的选择。你们入门可以都先从Python开始，不着急慢慢来。</p>
+<h4 id="4-学习使用Linux操作系统"><a href="#4-学习使用Linux操作系统" class="headerlink" title="4.学习使用Linux操作系统"></a>4.学习使用Linux操作系统</h4><p>计算机视觉的最终目的是在小车、机械电控装置、机器人上运行深度学习模型，因此需要学习一种应用在开发板上更多的操作系统——Linux。我们的电脑看似用Windows更多，实际上生活中更多的电器采用Linux系统，比如你家中的路由器。</p>
+<p>Linux是一个开源的操作系统，有很多发行版本，这里贴一张一个国外码农博主贴出的Linux发行版测评图，仅供参考</p>
+<p> <img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8719.png" srcset="/img/loading.gif" lazyload></p>
+<p>新手还是建议先学习使用ubuntu，因为ubuntu的教程多，也稳定。通过学习ubuntu中的指令操作等等熟悉linux系统，再上手自己喜欢的发行版。</p>
+<p>​     Linux教程-CentOS7.6版本：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Sv411r7vd/?spm_id_from=333.1387.upload.video_card.click">【小白入门 通俗易懂】韩顺平 一周学会Linux_哔哩哔哩_bilibili</a></p>
+<p>​     Linux教程-ubuntu版本：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vE411h7Fi/?spm_id_from=333.337.search-card.all.click">正点原子【第一期】手把手教你学Linux之Ubuntu入门篇_哔哩哔哩_bilibili</a></p>
+<p>5.学习使用算法开发板和视觉开发</p>
+<p>计算机视觉是上述唯一算法中唯一一个联系硬件的。因此如果你对计算机视觉感兴趣，你需要着手准备一个算法开发板。这里推荐几款仅供参考：</p>
+<p>​				 <img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8720.jpg" srcset="/img/loading.gif" lazyload>				</p>
+<p>树莓派 4b&#x2F;5。优点是社区和教程很给力，而且有自带的树莓派OS的Linux系统，非常适合新手入门。缺点是进口开发板，小贵，性价比不高，而且没有自带的独立npu（模型推理速度慢）。其他接口功能和可开放性都挺好的。</p>
+<p>​				 <img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8721.jpg" srcset="/img/loading.gif" lazyload></p>
+<p>K230。优点是像亚博智能之类的K230开发板都很成熟了，甚至还带一个显示屏，有独立npu单元，性价比高，成品项目的源代码也很丰富。缺点是K230的配套ide长得很丑，而且可自主开发性不高，但对于新手来说足够了。</p>
+<pre><code class="hljs">				![](\img\engineer\图片22.png)
+</code></pre>
+<p>OpenMV。优点是极致好上手，也很便宜。入门非常简单，很多实物赛都用它。缺点也是ide丑，自主开放度低，基本你学了一段时间后就能感受到它明显是不够用的。新手可选。</p>
+<p>​				 <img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8723.jpg" srcset="/img/loading.gif" lazyload></p>
+<p>Jstson系列。英伟达产品，优点是自带GPU，性能爆炸。缺点非常贵。</p>
+<p><img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8731.png" srcset="/img/loading.gif" lazyload></p>
+<p>除此之外还有RDK系列（左）和香橙派系列（右）等。</p>
+<p>算法开发板由于要跑大模型，普遍价格会比电控单片机的主控板像要贵一些，电控stm32中比较好的H7价格大概在300多，而一块k230板子就要300多了。但是计算机视觉的板子不像电控的主控板那样容易烧坏，至少我在实验室没有听说过什么谁的树莓派烧了。而单片机烧板子是家常便饭。</p>
+<p>算法开发板和普通电控板的区别就是我们需要有NPU、KPU、GPU算力的芯片来提高我们处理任务的速度，还要配有跟高级的操作系统（Linux）。</p>
+<h4 id="6-进阶"><a href="#6-进阶" class="headerlink" title="6.进阶"></a>6.进阶</h4><p>对于想打机器人实物赛天花板的RobotMaster比赛，或者其他大型项目的计算机视觉手来说，计算机视觉还有很多很多要学习的东西，它的发展前景丝毫不逊色于神经网络方向。假如你进了实验室，你也许会见到很多厉害的学长，玩好Linux只是基础操作，C++写视觉程序更是常规，他们甚至可能用Intel-NUC小电脑代替算法开发板。计算机视觉作为一个机器人工程的“眼睛”，或者说是“大脑”，它的责任绝对是最重的。</p>
+<p>这里再最后放一个ROS2的教程，如果你有这个需求再学习，一定记住不要闭门造车，要在实践中学习，和在实践中知道自己需要学什么：</p>
+<p>​		<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV16B4y1Q7jQ/?spm_id_from=333.337.search-card.all.click">【古月居】古月·ROS2入门21讲 | 带你认识一个全新的机器人操作系统_哔哩哔哩_bilibili</a></p>
+<h4 id="7-想说的话"><a href="#7-想说的话" class="headerlink" title="7.想说的话"></a>7.想说的话</h4><p>对于实物赛，传统的组合是一个视觉手，一个电控手，一个机械手。对应到实验室的方向，分别为算法&#x2F;深度学习（视觉）、单片机&#x2F;嵌入式（电控）、三维建模&#x2F;机械建模（机械）。这三个方向共同组成了一个机器人。但是在实际当中，电控手的数量通常最多，视觉手数量相对较少，机械手更是少的可怜。这导致从一些小车比赛开始，逐渐演变成一个组合两个电控一个视觉，机械机构通常草草了事或者上网买一个底座。我认为想要在比赛中取得好成绩，三个方向的队员缺一不可，希望你们在未来能够认识到这一点。</p>
+<p>另外，无论是实物赛的组队、建模赛的组队，还是商业赛的组队，队友之间的团结的相互理解和沟通也非常重要，这是中学大多考试和比赛所没有的东西。如果有余力，希望我们视觉工程师们也能学习一点点的电控和机械方面的知识，方便组队比赛时和队友的沟通，毕竟我们视觉工程师可是控制着一个机器人的“大脑”啊。</p>
+<h2 id="4-总结和补充"><a href="#4-总结和补充" class="headerlink" title="4.  总结和补充"></a>4.  总结和补充</h2><p>对于一些能看到这里的同学们，可能仍然为算法是什么，算法究竟能干什么，我为什么要学算法，这一系列问题感到迷茫。而一些同学可能心中是早有目标的：我就是要通过比赛加分保研，或者我就是要在大学学一门技术，或者我就是要打比赛发论文之类的。</p>
+<p>我想聊聊我为什么想学算法。</p>
+<p>早在指南的开头，我就建议大家不要想着既要有要，因为我就是那个反面教材，在我之前有这样的人，在我之后仍然还会有这样的人，但是无论如何我还是需要告诫大家：人的精力是有限的。</p>
+<p>我曾经也只是抱着保研加分的心理来到实验室，但是我知道我潜意识里一定是喜欢算法的，不然我也不会因为捣鼓算法丢了绩点。直到现在我大一的一年结束后，我终于明白了自己再也成为不了保研的苗子（有很多因素，光顾着学算法打比赛从而落下课内是其中一小部分原因），我开始寻找我学习算法的其他原因。</p>
+<h4 id="1-程序设计算法："><a href="#1-程序设计算法：" class="headerlink" title="1.程序设计算法："></a>1.程序设计算法：</h4><p>我认为，程序设计算法岗的工程师是最符合大众对于那种守在电脑前敲键盘的码农的印象了。许多互联网大厂，像腾讯、阿里、字节跳动，都有算法岗，而且算法岗也容易转到其他互联网岗业领域，毕竟算法无处不在。</p>
+<p>我没有退出ACM校队，一个很重要的原因就是我想打这种比赛。当我打过挑战杯、数学建模这样的比赛过后，我愈发感到打ACM是一个多么痛快的事情，我能够看到自己输在别人什么地方，我为什么样例过不了，我能通过补题、加训，弥补自己的不足。这是那些评委决策的比赛所没有的东西。这里没有ai，没有黑箱，只有实打实的训练。</p>
+<h4 id="2-神经网络算法："><a href="#2-神经网络算法：" class="headerlink" title="2.神经网络算法："></a>2.神经网络算法：</h4><p>如果你有仔细看完我对神经网络算法方向的介绍，你现在对它的印象应该是：新，难，paper，水赛。</p>
+<p>在奇妙的互联网世界一直在诞生有趣的东西，而在几年前，Vtuber虚拟主播世界里一个名叫Neuro-sama的虚拟主播横空出世，和其他皮套下是人类的主播不一样的是，Neuro的套皮下是一个ai大模型。</p>
+<p>​                  <img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8726.jpg" srcset="/img/loading.gif" lazyload>             </p>
+<ul>
+<li>AI虚拟主播Neuro-sama</li>
+</ul>
+<p>深度学习本身的宗旨就是，让机器自己学习知识和动作，完成分类、预测、回归、识别、检测等任务。用深度学习打比赛发paper只是因为它的理论比较前沿，有很多项目可以做。但是神经网络模型也是可以落地的，无论是ChatGPT还是Neuro-sama，其底层都有一个大语言模型，这些都是神经网络方向变现的产品。</p>
+<p>你要说我学神经网络的目的是为了复刻一个Neuro-sama，那未免有些夸张。但是致力于让各种任务智能化，是我迷恋神经网络算法的真正原因。</p>
+<h4 id="3-计算机视觉算法"><a href="#3-计算机视觉算法" class="headerlink" title="3.计算机视觉算法"></a>3.计算机视觉算法</h4><p>作为一个唯一在硬件上落地的算法方向，计算机视觉给我带来的成就感无疑是最高的。引领我学习计算机视觉的一位学长多次和我说过：“我对那些只有理论而不能落地的东西不感兴趣，我就是喜欢做机器人。”</p>
+<p>的确，当你看到你们团队的机器人、智能小车、或者其他智能装置能如你所愿在实际场景中执行任务的时候，那种成就感和满足感是只有实物赛能带给你的。</p>
+<p> <img src="/%5Cimg%5Cengineer%5C%E5%9B%BE%E7%89%8727.jpg" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>我在实验室考核时做的自动瞄准机</li>
+</ul>
+<p>计算机视觉作为实物应用型算法，发展前景不比前面两种算法方向差，而且我个人认为视觉CV工程师的工作更有趣味性。</p>
+<h5 id="关于我自身学习算法的经验分享就到这里啦，-这一篇文章是我纯手打、耗时两天完成的，本来是面向2025年我们学校实验室纳新用的，就删删改改了一些放在这里啦。把这么大篇幅的pdf改成markdown真是累坏我了。如果有同校的学弟学妹想要原版可以邮箱联系我要原版哦。"><a href="#关于我自身学习算法的经验分享就到这里啦，-这一篇文章是我纯手打、耗时两天完成的，本来是面向2025年我们学校实验室纳新用的，就删删改改了一些放在这里啦。把这么大篇幅的pdf改成markdown真是累坏我了。如果有同校的学弟学妹想要原版可以邮箱联系我要原版哦。" class="headerlink" title="关于我自身学习算法的经验分享就到这里啦， 这一篇文章是我纯手打、耗时两天完成的，本来是面向2025年我们学校实验室纳新用的，就删删改改了一些放在这里啦。把这么大篇幅的pdf改成markdown真是累坏我了。如果有同校的学弟学妹想要原版可以邮箱联系我要原版哦。"></a>关于我自身学习算法的经验分享就到这里啦， 这一篇文章是我纯手打、耗时两天完成的，本来是面向2025年我们学校实验室纳新用的，就删删改改了一些放在这里啦。把这么大篇幅的pdf改成markdown真是累坏我了。如果有同校的学弟学妹想要原版可以邮箱联系我要原版哦。</h5>
+
+  
+
+</article>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

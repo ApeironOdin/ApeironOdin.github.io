@@ -69,7 +69,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"apeironblog.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"apeironblog.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":1.5},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -135,7 +135,7 @@
                   
                   
                   
-                  <a class="dropdown-item" href="/article/acm" target="_self">
+                  <a class="dropdown-item" href="/article-ACM" target="_self">
                     
                     <span>ACM程序设计</span>
                   </a>
@@ -143,7 +143,7 @@
                   
                   
                   
-                  <a class="dropdown-item" href="/article/dl" target="_self">
+                  <a class="dropdown-item" href="/article-DL" target="_self">
                     
                     <span>DL深度学习</span>
                   </a>
@@ -151,7 +151,7 @@
                   
                   
                   
-                  <a class="dropdown-item" href="/article/cv" target="_self">
+                  <a class="dropdown-item" href="/article-CV" target="_self">
                     
                     <span>CV计算机视觉</span>
                   </a>
@@ -177,9 +177,21 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/Comments/" target="_self">
+              <a class="nav-link" href="/comments/" target="_self">
                 <i class="iconfont icon-comment"></i>
                 <span>Comments</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/log/" target="_self">
+                <i class="iconfont icon-note"></i>
+                <span>Log</span>
               </a>
             </li>
           
@@ -213,7 +225,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/sea.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -242,7 +254,7 @@
           >
           
             <div class="about-avatar">
-              <img src="/img/avatar.png" srcset="/img/loading.gif" lazyload class="img-fluid" alt="avatar">
+              <img src="/img/APEIRON%20SIGN(enhanced%20pro).png" srcset="/img/loading.gif" lazyload class="img-fluid" alt="avatar">
             </div>
           
           <div class="container">
@@ -252,47 +264,9 @@
 
 <div class="text-center">
   <div class="about-info">
-    <div class="about-name">Fluid</div>
-    <div class="about-intro">An elegant theme for Hexo</div>
+    <div class="about-name">Apeiron</div>
+    <div class="about-intro">Apeironの工程师成长之旅(✪ω✪)</div>
     <div class="about-icons">
-      
-        
-        
-        
-        <a href=https://github.com class="
-           hint--bottom hint--rounded"
-           aria-label="GitHub"
-           target="_blank"
-        >
-          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
-          
-        </a>
-      
-        
-        
-        
-        <a href=https://douban.com class="
-           hint--bottom hint--rounded"
-           aria-label="豆瓣"
-           target="_blank"
-        >
-          <i class="iconfont icon-douban-fill" aria-hidden="true"></i>
-          
-        </a>
-      
-        
-        
-        
-        <a  class="qr-trigger
-           "
-           
-           target="_self"
-        >
-          <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
-          
-            <img class="qr-img" src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
-          
-        </a>
       
     </div>
   </div>
