@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="ACM-library" />
+    <meta name="hexo-theme-A4" content="v2.0.0" />
+    <link rel="alternate icon" type="image/webp" href="/img/A.png">
+    <title>Apeironverse | Where eternity meets creation</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+ 
+         <!--注意：首页既不是post也不是page-->
+        
+        
+        
+<link rel="stylesheet" href="/css/ui.css">
+ 
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+    
+   
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+   
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+    <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css' /> 
+<meta name="generator" content="Hexo 8.1.1"></head>
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    
+
+
+    <body>
+        <script src="/js/darkmode-js.min.js"></script>
+        
+        <script>
+            const options = {
+                bottom: '40px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '42px', // default: 'unset'
+                time: '0.3s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: ' #e4e4e4 ',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: true, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+        </script>
+        
+        
+            
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 50%; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/A.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">Apeironverse</a> 
+            <span class="description">We see things not as they are, but as we are.</span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+            
+                <li><a href="/about/">关于</a></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
+
+    
+        
+            
+                <div class="post-main-title" style="text-align: center;">
+                    ACM-library
+                </div>
+            
+        
+      
+    
+
+    
+
+        
+            <div class="post-head-meta-center">
+        
+                
+                    <span>最近更新：2025-11-12</span> 
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                     <span>字数总计：2.9k</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span>阅读估时：12分钟</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span id="busuanzi_container_page_pv">
+                        阅读量：<span id="busuanzi_value_page_pv"></span>次
+                    </span>
+                
+            </div>
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%B8%80%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86"><span class="post-toc-text">一、字符串处理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-%E5%AD%97%E7%AC%A6%E8%BE%93%E5%85%A5"><span class="post-toc-text">1.字符输入</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1-cin"><span class="post-toc-text">(1) cin</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#2-cin-get"><span class="post-toc-text">(2) cin.get()</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#3-cin-getline"><span class="post-toc-text">(3) cin.getline()</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#4-getline"><span class="post-toc-text">(4) getline()</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#6-%E6%80%BB%E7%BB%93"><span class="post-toc-text">(6) 总结</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-%E5%AD%97%E7%AC%A6%E4%B8%B2string"><span class="post-toc-text">2.字符串string</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1-string-%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="post-toc-text">(1) string 初始化</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#2-string-%E9%A6%96%E5%B0%BE%E5%AD%97%E7%AC%A6"><span class="post-toc-text">(2) string 首尾字符</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#3-string-%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="post-toc-text">(3) string 迭代器</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#4-string-%E6%8F%92%E5%85%A5%E4%B8%8E%E5%88%A0%E9%99%A4"><span class="post-toc-text">(4) string 插入与删除</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#5-string-%E6%9B%BF%E6%8D%A2%E5%92%8C%E6%8B%BC%E6%8E%A5"><span class="post-toc-text">(5) string 替换和拼接</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#6-string-%E9%81%8D%E5%8E%86"><span class="post-toc-text">(6) string 遍历</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#7-string-%E6%8E%92%E5%BA%8F%E5%92%8C%E6%AF%94%E8%BE%83"><span class="post-toc-text">(7) string 排序和比较</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#8-string-%E6%9F%A5%E6%89%BE"><span class="post-toc-text">(8) string 查找</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#9-string-%E5%88%A4%E7%A9%BA%E5%92%8C%E6%B8%85%E7%A9%BA"><span class="post-toc-text">(9) string 判空和清空</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%BA%8C%E3%80%81STL%E5%AE%B9%E5%99%A8%E5%BA%93"><span class="post-toc-text">二、STL容器库</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-vector"><span class="post-toc-text">1.  vector</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1-vector-%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="post-toc-text">(1) vector 初始化</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#2-vector-%E8%B0%83%E7%94%A8%E5%85%83%E7%B4%A0"><span class="post-toc-text">(2) vector 调用元素</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#3-vector-%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="post-toc-text">(3) vector 迭代器</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#4-vector-%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4"><span class="post-toc-text">(4) vector 插入和删除</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#5-vector-%E9%81%8D%E5%8E%86"><span class="post-toc-text">(5) vector 遍历</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#6-vector-%E5%88%A4%E7%A9%BA%E5%92%8C%E6%B8%85%E7%A9%BA"><span class="post-toc-text">(6) vector 判空和清空</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#7-vector-%E4%B8%80%E4%BA%9B%E7%AE%97%E6%B3%95"><span class="post-toc-text">(7) vector 一些算法</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-queue"><span class="post-toc-text">2.queue</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1-queue-%E8%B0%83%E7%94%A8"><span class="post-toc-text">(1) queue 调用</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#2-priority-queue-%E8%B0%83%E7%94%A8"><span class="post-toc-text">(2) priority_queue 调用</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#3-deque-%E8%B0%83%E7%94%A8"><span class="post-toc-text">(3) deque 调用</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-stack"><span class="post-toc-text">3.stack</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1-stack-%E8%B0%83%E7%94%A8"><span class="post-toc-text">(1) stack 调用</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-set"><span class="post-toc-text">4.set</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1-set-%E6%8F%92%E5%85%A5%E5%92%8C%E5%88%A0%E9%99%A4"><span class="post-toc-text">(1) set 插入和删除</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#2-set-%E4%B8%80%E4%BA%9B%E7%AE%97%E6%B3%95"><span class="post-toc-text">(2) set 一些算法</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5-map"><span class="post-toc-text">5.map</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1-map-%E8%B0%83%E7%94%A8"><span class="post-toc-text">(1) map 调用</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#6-bitset"><span class="post-toc-text">6.bitset</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#1-bitset-%E8%B0%83%E7%94%A8"><span class="post-toc-text">(1) bitset 调用</span></a></li></ol></li></ol></li></ol>
+            
+        
+        <div class=".article-gallery"><h3 id="一、字符串处理"><a href="#一、字符串处理" class="headerlink" title="一、字符串处理"></a>一、字符串处理</h3><h4 id="1-字符输入"><a href="#1-字符输入" class="headerlink" title="1.字符输入"></a>1.字符输入</h4><h6 id="1-cin"><a href="#1-cin" class="headerlink" title="(1) cin"></a>(1) cin</h6><p>用法一：接收一个字符串，无论是char a[10]，还是string b 都一样，遇到”Space”,”Tab”,”Enter”都会结束</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">10</span>];</span><br><span class="line">	string b;</span><br><span class="line">	cin&gt;&gt;a;</span><br><span class="line">	cin&gt;&gt;b;</span><br><span class="line">    cout&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-cin-get"><a href="#2-cin-get" class="headerlink" title="(2) cin.get()"></a>(2) cin.get()</h6><p>用法一：用 ch &#x3D; cin.get() 或 cin.get(ch) 来接收单个字符</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">char</span> ch;</span><br><span class="line">	ch = cin.<span class="built_in">get</span>();  <span class="comment">// 或者 cin.get(ch)</span></span><br><span class="line">	cout&lt;&lt;ch&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>用法二：用cin.get(a, n)，其中a是字符数组名，n是要输入的字符个数，可接收空格</p>
+<p>注意1：不能用于string类型，只能输入字符数组</p>
+<p>注意2：假如定义cin(a, 20)，实际只能输入19个字符</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">20</span>];</span><br><span class="line">	cin.<span class="built_in">get</span>(a,<span class="number">10</span>);  <span class="comment">// 向字符数组a中输入9个字符</span></span><br><span class="line">	cout&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>用法三：无参数调用，主要用于舍弃输入流中不需要的字符，或用于吃掉回车，相当于getchar()</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     </span><br><span class="line">    <span class="type">char</span> arr[<span class="number">10</span>];</span><br><span class="line">    cin.<span class="built_in">get</span>(arr,<span class="number">10</span>);</span><br><span class="line">    cin.<span class="built_in">get</span>();<span class="comment">//用于吃掉回车，相当于getchar();</span></span><br><span class="line">    cout&lt;&lt;arr&lt;&lt;endl;</span><br><span class="line">    cin.<span class="built_in">get</span>(arr,<span class="number">5</span>);</span><br><span class="line">    cout&lt;&lt;arr&lt;&lt;endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//输入abcdefghi</span></span><br><span class="line"><span class="comment">//输出abcdefghi</span></span><br><span class="line"><span class="comment">//输入abcde</span></span><br><span class="line"><span class="comment">//输出abcd</span></span><br><span class="line"><span class="comment">//请按任意键继续</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     </span><br><span class="line">    <span class="type">char</span> arr[<span class="number">10</span>];</span><br><span class="line">    cin.<span class="built_in">get</span>(arr,<span class="number">10</span>);</span><br><span class="line">    <span class="comment">//cin.get();//用于吃掉回车，相当于getchar(); 现在把这行注释掉试试看</span></span><br><span class="line">    cout&lt;&lt;arr&lt;&lt;endl;</span><br><span class="line">    cin.<span class="built_in">get</span>(arr,<span class="number">5</span>);</span><br><span class="line">    cout&lt;&lt;arr&lt;&lt;endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//输入abcdefghi(\n)</span></span><br><span class="line"><span class="comment">//输出abcdefghi  //换行符没被舍去留在了输入流中，自动填充并结束了第二次输入</span></span><br><span class="line"><span class="comment">//请按任意键继续</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="3-cin-getline"><a href="#3-cin-getline" class="headerlink" title="(3) cin.getline()"></a>(3) cin.getline()</h6><p>用法一：调用、功能、注意点 和 cin.get() 的第二种用法一模一样</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">char</span> a[<span class="number">20</span>];</span><br><span class="line">	cin.<span class="built_in">getline</span>(a,<span class="number">10</span>);  <span class="comment">// 向字符数组a中输入9个字符</span></span><br><span class="line">	cout&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>用法二：cin.getline(m, n, ch)，其中m表示字符数组位置，n表示接收字符个数，ch表示结束字符</p>
+<p>在多维数组当中，m可以是a[i]</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">char</span> m[<span class="number">3</span>][<span class="number">20</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;\n请输入第&quot;</span>&lt;&lt;i<span class="number">+1</span>&lt;&lt;<span class="string">&quot;个字符串：&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cin.<span class="built_in">getline</span>(m[i],<span class="number">20</span>); <span class="comment">//结束字符默认为回车</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;输出m[&quot;</span>&lt;&lt;j&lt;&lt;<span class="string">&quot;]的值:&quot;</span>&lt;&lt;m[j]&lt;&lt;endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="4-getline"><a href="#4-getline" class="headerlink" title="(4) getline()"></a>(4) getline()</h6><p>用法一：需要加<string>头文件，调用 getline(cin, a)输入字符串或字符数组，弥补了前两种输入无法处理string类型的弊病</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s;</span><br><span class="line">	<span class="built_in">getline</span>(cin,s);</span><br><span class="line">	cout &lt;&lt; s &lt;&lt; endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="6-总结"><a href="#6-总结" class="headerlink" title="(6) 总结"></a>(6) 总结</h6><table>
+<thead>
+<tr>
+<th></th>
+<th>字符数组</th>
+<th>字符串</th>
+<th>能否输入空格</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cin</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>❌</td>
+<td>调用简单</td>
+</tr>
+<tr>
+<td>cin.get()</td>
+<td>✔️</td>
+<td>❌</td>
+<td>✔️</td>
+<td>可用于定量输入字符数组</td>
+</tr>
+<tr>
+<td>cin.getline()</td>
+<td>✔️</td>
+<td>❌</td>
+<td>✔️</td>
+<td>可用于多维字符数组输入</td>
+</tr>
+<tr>
+<td>getline()</td>
+<td>❌</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>可用于字符串输入</td>
+</tr>
+<tr>
+<td>getchar()</td>
+<td>❌</td>
+<td>❌</td>
+<td>✔️</td>
+<td>可用于吞空格，尽量少用</td>
+</tr>
+</tbody></table>
+<h4 id="2-字符串string"><a href="#2-字符串string" class="headerlink" title="2.字符串string"></a>2.字符串string</h4><h6 id="1-string-初始化"><a href="#1-string-初始化" class="headerlink" title="(1) string 初始化"></a>(1) string 初始化</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">string <span class="title">str</span><span class="params">(<span class="string">&quot;123&quot;</span>)</span></span>;   <span class="comment">//&quot;123&quot;</span></span><br><span class="line"><span class="function">string <span class="title">str</span><span class="params">(<span class="number">3</span>,<span class="string">&quot;1&quot;</span>)</span></span>;   <span class="comment">//&quot;111&quot;</span></span><br><span class="line">string str = <span class="string">&quot;123&quot;</span>;  <span class="comment">//&quot;123&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="2-string-首尾字符"><a href="#2-string-首尾字符" class="headerlink" title="(2) string 首尾字符"></a>(2) string 首尾字符</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str.<span class="built_in">front</span>();   <span class="comment">//第一个字符 </span></span><br><span class="line">str.<span class="built_in">back</span>();    <span class="comment">//最后一个字符</span></span><br><span class="line"></span><br><span class="line">str.<span class="built_in">size</span>()     <span class="comment">//字符串大小</span></span><br><span class="line">str.<span class="built_in">length</span>()   <span class="comment">//字符串长度</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="3-string-迭代器"><a href="#3-string-迭代器" class="headerlink" title="(3) string 迭代器"></a>(3) string 迭代器</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string::iterator iter   <span class="comment">//一个string的迭代器，可以用auto代替</span></span><br><span class="line">str.<span class="built_in">begin</span>()             <span class="comment">//指向str第一个元素位置的迭代器</span></span><br><span class="line">str.<span class="built_in">end</span>()               <span class="comment">//指向str最后一个元素后一个位置的迭代器</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="4-string-插入与删除"><a href="#4-string-插入与删除" class="headerlink" title="(4) string 插入与删除"></a>(4) string 插入与删除</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">str.<span class="built_in">push_back</span>(<span class="string">&#x27;a&#x27;</span>);                       <span class="comment">//在尾部插入一个元素</span></span><br><span class="line">str.<span class="built_in">insert</span>(str.<span class="built_in">begin</span>(), <span class="string">&#x27;a&#x27;</span>);             <span class="comment">//在指定位置前面插入一个元素</span></span><br><span class="line"></span><br><span class="line">str.<span class="built_in">pop_back</span>();                           <span class="comment">//删除最后一个元素 </span></span><br><span class="line">str.<span class="built_in">erase</span>(str.<span class="built_in">begin</span>());                   <span class="comment">//删除迭代器指向元素</span></span><br><span class="line">str.<span class="built_in">erase</span>(str.<span class="built_in">begin</span>()<span class="number">+1</span>, str.<span class="built_in">end</span>()<span class="number">-2</span>);    <span class="comment">//删除指定区间的元素</span></span><br><span class="line">str.<span class="built_in">erase</span>(k, n);                          <span class="comment">//删除从索引k开始的n个字符</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="5-string-替换和拼接"><a href="#5-string-替换和拼接" class="headerlink" title="(5) string 替换和拼接"></a>(5) string 替换和拼接</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">str.<span class="built_in">replace</span>(str.<span class="built_in">begin</span>(), str.begin + <span class="number">5</span>, <span class="string">&quot;boy&quot;</span>); <span class="comment">//替换迭代器指定的区间</span></span><br><span class="line">str.<span class="built_in">replace</span>(k, n, <span class="string">&quot;girl&quot;</span>);                      <span class="comment">//替换从索引k开始的n个字符</span></span><br><span class="line"></span><br><span class="line">str<span class="number">1.</span><span class="built_in">append</span>(str2);                              <span class="comment">//&quot;123&quot;,&quot;abc&quot;-&gt;&quot;123abc&quot;</span></span><br><span class="line">str1 = str1 + str2;                             <span class="comment">//&quot;123&quot;,&quot;abc&quot;-&gt;&quot;123abc&quot;</span></span><br><span class="line"></span><br><span class="line">str.<span class="built_in">substr</span>(k, n);  <span class="comment">//返回从索引k开始的n个元素组成的字符串切片</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="6-string-遍历"><a href="#6-string-遍历" class="headerlink" title="(6) string 遍历"></a>(6) string 遍历</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; str.<span class="built_in">size</span>(); i ++ )                             <span class="comment">//索引遍历 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(string::iterator iter = str.<span class="built_in">begin</span>(); iter != str.<span class="built_in">end</span>(); iter ++ ) </span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> iter = str.<span class="built_in">begin</span>(); iter != str.<span class="built_in">end</span>(); iter ++ )         <span class="comment">//迭代器遍历 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> x : str) <span class="comment">//便捷遍历，x作为形参被赋值不改变原字符串 </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> &amp;x : str) <span class="comment">//便捷遍历，x作为实参被赋值将会改变原字符串 </span></span><br></pre></td></tr></table></figure>
+
+<h6 id="7-string-排序和比较"><a href="#7-string-排序和比较" class="headerlink" title="(7) string 排序和比较"></a>(7) string 排序和比较</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(str.<span class="built_in">begin</span>(), str.<span class="built_in">end</span>());</span><br><span class="line"></span><br><span class="line">str1 &lt; str2            <span class="comment">//字典序比较，&lt;、&lt;=、==、&gt;、&gt;=都可以用，和字符串长度无关</span></span><br><span class="line">str<span class="number">1.</span><span class="built_in">compare</span>(str2)     <span class="comment">//相等为0，str1&gt;str2为1，反之-1</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="8-string-查找"><a href="#8-string-查找" class="headerlink" title="(8) string 查找"></a>(8) string 查找</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">str.<span class="built_in">find</span>(<span class="string">&quot;123&quot;</span>)           <span class="comment">//从前往后找，若找到，返回首字母下标；反之，返回-1</span></span><br><span class="line">str.<span class="built_in">rfind</span>(<span class="string">&quot;123&quot;</span>)          <span class="comment">//从后往前找</span></span><br><span class="line">    </span><br><span class="line">str.<span class="built_in">find_first_of</span>(<span class="string">&quot;123&quot;</span>)        <span class="comment">//查找第一个属于该字符串的字符返回下标</span></span><br><span class="line">str.<span class="built_in">find_first_not_of</span>(<span class="string">&quot;123&quot;</span>)    </span><br><span class="line">    </span><br><span class="line">str.<span class="built_in">find_last_of</span>(<span class="string">&quot;123&quot;</span>)         <span class="comment">//查找最后一个属于该字符串的字符返回下标</span></span><br><span class="line">str.<span class="built_in">find_last_not_of</span>(<span class="string">&quot;123&quot;</span>)</span><br><span class="line"></span><br><span class="line">str.<span class="built_in">count</span>(<span class="string">&#x27;a&#x27;</span>)                  <span class="comment">//返回str里a字符的个数 </span></span><br></pre></td></tr></table></figure>
+
+<h6 id="9-string-判空和清空"><a href="#9-string-判空和清空" class="headerlink" title="(9) string 判空和清空"></a>(9) string 判空和清空</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.<span class="built_in">empty</span>();    <span class="comment">//返回布尔值 </span></span><br><span class="line">str.<span class="built_in">clear</span>();</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="二、STL容器库"><a href="#二、STL容器库" class="headerlink" title="二、STL容器库"></a>二、STL容器库</h3><h4 id="1-vector"><a href="#1-vector" class="headerlink" title="1.  vector"></a>1.  vector</h4><h6 id="1-vector-初始化"><a href="#1-vector-初始化" class="headerlink" title="(1) vector 初始化"></a>(1) vector 初始化</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">v</span><span class="params">(n)</span></span>;      <span class="comment">//定义了10个整型元素的向量,但没有给出初值，其值是不确定的。</span></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">v</span><span class="params">(<span class="number">10</span>,<span class="number">1</span>)</span></span>;   <span class="comment">//定义了10个整型元素的向量,且给出每个元素的初值为1</span></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(b)</span></span>;      <span class="comment">//用b向量来创建a向量，整体复制性赋值</span></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(b.begin(),b.begin<span class="number">+3</span>)</span></span>;  <span class="comment">//定义a元素的值等于b中第0个到第2个（共3个）元素</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> b[<span class="number">7</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">8</span>&#125;;</span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(b,b<span class="number">+7</span>)</span></span>;                 <span class="comment">//从数组中获得初值</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> rows = <span class="number">3</span>, cols = <span class="number">4</span>;</span><br><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">arr</span>(rows, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(cols, <span class="number">0</span>)); <span class="comment">//vector构建多维数组</span></span><br><span class="line">arr[<span class="number">1</span>][<span class="number">2</span>] = <span class="number">5</span>;  <span class="comment">// 修改第2行第3列为5</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="2-vector-调用元素"><a href="#2-vector-调用元素" class="headerlink" title="(2) vector 调用元素"></a>(2) vector 调用元素</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">front</span>()    <span class="comment">//第一个元素 </span></span><br><span class="line">v.<span class="built_in">back</span>()     <span class="comment">//最后一个元素</span></span><br><span class="line">v.<span class="built_in">size</span>()     <span class="comment">//向量大小</span></span><br><span class="line">v[i]         <span class="comment">//向量v的第i个元素</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="3-vector-迭代器"><a href="#3-vector-迭代器" class="headerlink" title="(3) vector 迭代器"></a>(3) vector 迭代器</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vector::iterator iter   <span class="comment">//一个vector的迭代器，可以用auto代替</span></span><br><span class="line">v.<span class="built_in">begin</span>()             <span class="comment">//指向v第一个元素位置的迭代器</span></span><br><span class="line">v.<span class="built_in">end</span>()               <span class="comment">//指向v最后一个元素后一个位置的迭代器</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="4-vector-插入和删除"><a href="#4-vector-插入和删除" class="headerlink" title="(4) vector 插入和删除"></a>(4) vector 插入和删除</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">push_back</span>(a);                         <span class="comment">//在尾部插入一个元素</span></span><br><span class="line">v.<span class="built_in">insert</span>(v.<span class="built_in">begin</span>(), a);                 <span class="comment">//在指定位置前面插入一个元素</span></span><br><span class="line">v.<span class="built_in">insert</span>(v.<span class="built_in">begin</span>(),k, a);               <span class="comment">//在指定位置前面插入k个元素</span></span><br><span class="line"></span><br><span class="line">v.<span class="built_in">pop_back</span>();                           <span class="comment">//删除最后一个元素 </span></span><br><span class="line">v.<span class="built_in">erase</span>(v.<span class="built_in">begin</span>());                     <span class="comment">//删除迭代器指向元素</span></span><br><span class="line">v.<span class="built_in">erase</span>(v.<span class="built_in">begin</span>()<span class="number">+1</span>, v.<span class="built_in">end</span>()<span class="number">-2</span>);        <span class="comment">//删除指定区间的元素</span></span><br><span class="line">v.<span class="built_in">erase</span>(k, n);                          <span class="comment">//删除从索引k开始的n个元素</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="5-vector-遍历"><a href="#5-vector-遍历" class="headerlink" title="(5) vector 遍历"></a>(5) vector 遍历</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; v.<span class="built_in">size</span>(); i ++ )       <span class="comment">//索引遍历,确保向量每个索引都已经有对应值</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(vector::iterator iter = v.<span class="built_in">begin</span>(); iter != v.<span class="built_in">end</span>(); iter ++ ) </span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> iter = v.<span class="built_in">begin</span>(); iter != v.<span class="built_in">end</span>(); iter ++ )         <span class="comment">//迭代器遍历 </span></span><br></pre></td></tr></table></figure>
+
+<h6 id="6-vector-判空和清空"><a href="#6-vector-判空和清空" class="headerlink" title="(6) vector 判空和清空"></a>(6) vector 判空和清空</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">empty</span>();    <span class="comment">//返回布尔值 </span></span><br><span class="line">v.<span class="built_in">clear</span>();</span><br></pre></td></tr></table></figure>
+
+<h6 id="7-vector-一些算法"><a href="#7-vector-一些算法" class="headerlink" title="(7) vector 一些算法"></a>(7) vector 一些算法</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>());    <span class="comment">//排序</span></span><br><span class="line"><span class="built_in">reverse</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>())  <span class="comment">//反转</span></span><br><span class="line">a.<span class="built_in">swap</span>(b);                   <span class="comment">//a,b为向量，将a中的元素和b中的元素进行整体性交换</span></span><br><span class="line"><span class="built_in">find</span>(v.<span class="built_in">begin</span>(),v.<span class="built_in">end</span>(),k);   </span><br><span class="line"><span class="comment">//在向量v的一个范围中查找k，若存在返回其位置,否则返回一个绝对值很大的负数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//向量也可以比大小，和string相似，从头元素开始比大小</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-queue"><a href="#2-queue" class="headerlink" title="2.queue"></a>2.queue</h4><h6 id="1-queue-调用"><a href="#1-queue-调用" class="headerlink" title="(1) queue 调用"></a>(1) queue 调用</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">q.<span class="built_in">push</span>(<span class="number">2</span>); <span class="comment">//在队尾插入一个元素 </span></span><br><span class="line">q.<span class="built_in">pop</span>(); <span class="comment">//在队首删除一个元素</span></span><br><span class="line">q.<span class="built_in">empty</span>()</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-priority-queue-调用"><a href="#2-priority-queue-调用" class="headerlink" title="(2) priority_queue 调用"></a>(2) priority_queue 调用</h6><p>priority_queue容器相当于大根堆（或者小根堆）</p>
+<p>大根堆每次堆顶是最大元素，小根堆每次堆顶是最小元素</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">priority_queue&lt;<span class="type">int</span>&gt; q;                             <span class="comment">//生成大根堆</span></span><br><span class="line">priority_queue&lt;<span class="type">int</span>, vector&lt;<span class="type">int</span>&gt;, greater&lt;<span class="type">int</span>&gt;&gt; q;  <span class="comment">//生成小根堆</span></span><br><span class="line"></span><br><span class="line">q.<span class="built_in">push</span>(<span class="number">2</span>); <span class="comment">//把一个元素插入堆底部</span></span><br><span class="line">q.<span class="built_in">pop</span>(); <span class="comment">//删除堆顶的元素</span></span><br><span class="line"></span><br><span class="line">q.<span class="built_in">top</span>(); <span class="comment">//返回堆顶元素 </span></span><br><span class="line">q.<span class="built_in">empty</span>();</span><br></pre></td></tr></table></figure>
+
+<h6 id="3-deque-调用"><a href="#3-deque-调用" class="headerlink" title="(3) deque 调用"></a>(3) deque 调用</h6><p>与vector相比，deque在头部增删元素仅需要 O(1)的时间</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">dq.<span class="built_in">front</span>();<span class="comment">//头尾元素</span></span><br><span class="line">dq.<span class="built_in">back</span>();</span><br><span class="line"></span><br><span class="line">dq.<span class="built_in">begin</span>();<span class="comment">//迭代器</span></span><br><span class="line">dq.<span class="built_in">end</span>();</span><br><span class="line"></span><br><span class="line">dq.<span class="built_in">push_front</span>(<span class="number">2</span>); <span class="comment">//头插入 </span></span><br><span class="line">dq.<span class="built_in">push_back</span>(<span class="number">2</span>); <span class="comment">//尾插入 </span></span><br><span class="line"></span><br><span class="line">dq.<span class="built_in">pop_front</span>(); <span class="comment">//头删除</span></span><br><span class="line">dq.<span class="built_in">pop_back</span>(); <span class="comment">//尾删除</span></span><br><span class="line"></span><br><span class="line">dq.<span class="built_in">empty</span>();</span><br><span class="line">dq.<span class="built_in">clear</span>();</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-stack"><a href="#3-stack" class="headerlink" title="3.stack"></a>3.stack</h4><h6 id="1-stack-调用"><a href="#1-stack-调用" class="headerlink" title="(1) stack 调用"></a>(1) stack 调用</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sk.<span class="built_in">push</span>(<span class="number">2</span>); <span class="comment">//把一个元素放入栈 </span></span><br><span class="line">sk.<span class="built_in">pop</span>(); <span class="comment">//删除栈顶的元素 </span></span><br><span class="line">sk.<span class="built_in">top</span>(); <span class="comment">//返回栈顶元素 </span></span><br><span class="line">sk.<span class="built_in">empty</span>()</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-set"><a href="#4-set" class="headerlink" title="4.set"></a>4.set</h4><p>集合分为去重元素集合set和可重元素集合multiset,用法相同</p>
+<p>set为有序集合，unordered_set为无序集合(依赖哈希函数实现)</p>
+<h6 id="1-set-插入和删除"><a href="#1-set-插入和删除" class="headerlink" title="(1) set 插入和删除"></a>(1) set 插入和删除</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">st.<span class="built_in">insert</span>(<span class="number">2</span>);         <span class="comment">//插入一个元素</span></span><br><span class="line"></span><br><span class="line">st.<span class="built_in">erase</span>(st.<span class="built_in">begin</span>()); <span class="comment">//删除迭代器指向元素 </span></span><br><span class="line">st.<span class="built_in">erase</span>(<span class="number">2</span>);          <span class="comment">//删除所有为2的元素 </span></span><br><span class="line"></span><br><span class="line">st.<span class="built_in">empty</span>();</span><br><span class="line">st.<span class="built_in">clear</span>();</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-set-一些算法"><a href="#2-set-一些算法" class="headerlink" title="(2) set 一些算法"></a>(2) set 一些算法</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">st.<span class="built_in">find</span>(<span class="number">2</span>)         <span class="comment">//从前往后找，若找到，返回指向该处的迭代器；反之，返回迭代器st.end()</span></span><br><span class="line">st.<span class="built_in">lower_bound</span>(x)  <span class="comment">//二分查找大于等于x的元素中最小的一个，并返回指向该元素的迭代器。</span></span><br><span class="line">st.<span class="built_in">upper_bound</span>(x)  <span class="comment">//二分查找大于x的元素中最小的一个，并返回指向该元素的迭代器。</span></span><br><span class="line"></span><br><span class="line">st.<span class="built_in">count</span>(<span class="number">2</span>);       <span class="comment">//返回容器里2的个数</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-map"><a href="#5-map" class="headerlink" title="5.map"></a>5.map</h4><p>表分为去重元素表map和可重元素表multimap,用法相同</p>
+<p>map为有序表，unordered_map为无序表(依赖哈希函数实现)</p>
+<h6 id="1-map-调用"><a href="#1-map-调用" class="headerlink" title="(1) map 调用"></a>(1) map 调用</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">map&lt;key_type, value_type&gt; mp;</span><br><span class="line">map&lt;<span class="type">int</span>, <span class="type">int</span>&gt; mp;</span><br><span class="line"></span><br><span class="line">map&lt;<span class="type">int</span>, <span class="type">int</span>&gt;::iterator iter</span><br><span class="line">mp.<span class="built_in">begin</span>() </span><br><span class="line">mp.<span class="built_in">end</span>() </span><br><span class="line"></span><br><span class="line">mp.<span class="built_in">begin</span>().first    <span class="comment">//key的迭代器</span></span><br><span class="line"></span><br><span class="line">(*mp.<span class="built_in">begin</span>()).first    <span class="comment">//key的值</span></span><br><span class="line">mp.<span class="built_in">begin</span>()-&gt;first</span><br><span class="line"></span><br><span class="line">mp[<span class="number">2</span>] = <span class="number">5</span>; <span class="comment">//直接插入</span></span><br><span class="line">mp.<span class="built_in">insert</span>(<span class="built_in">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;(<span class="number">2</span>, <span class="number">5</span>)); <span class="comment">//用pair插入</span></span><br><span class="line"></span><br><span class="line">mp.<span class="built_in">erase</span>(iter); <span class="comment">//删除迭代器所指的键值对 </span></span><br><span class="line"></span><br><span class="line">mp.<span class="built_in">find</span>(<span class="number">2</span>);  <span class="comment">//从前往后找，若找到，返回指向该处的迭代器；反之，返回迭代器mp.end()</span></span><br><span class="line">mp.<span class="built_in">count</span>(<span class="number">2</span>); <span class="comment">//返回key为2的个数（map中只可能是0或者1） </span></span><br><span class="line"></span><br><span class="line">mp.<span class="built_in">empty</span>();</span><br><span class="line">mp.<span class="built_in">clear</span>();</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-bitset"><a href="#6-bitset" class="headerlink" title="6.bitset"></a>6.bitset</h4><h6 id="1-bitset-调用"><a href="#1-bitset-调用" class="headerlink" title="(1) bitset 调用"></a>(1) bitset 调用</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">bitset&lt;4&gt; bt;        <span class="comment">//生成4位二进制数，初始化为0000</span></span><br><span class="line"><span class="function">bitset&lt;8&gt; <span class="title">bt</span><span class="params">(<span class="number">12</span>)</span></span>;    <span class="comment">//生成8位二进制数，且将10进制数12转化为2进制数存入其中</span></span><br><span class="line"><span class="function">bitset&lt;8&gt; <span class="title">bt</span><span class="params">(str)</span></span>;   <span class="comment">//str只能是完全由01组成的字符串或者字符数组</span></span><br><span class="line"></span><br><span class="line">bt1 |= bt2; <span class="comment">//两个二进制数取或操作 </span></span><br><span class="line">bt1 &amp;= bt2; <span class="comment">//两个二进制数取与操作 </span></span><br><span class="line">bt1 ^= bt2; <span class="comment">//取异或</span></span><br><span class="line">bt1 = ~bt1; <span class="comment">//取反</span></span><br><span class="line">bt1 &lt;&lt;= x; <span class="comment">//左移右移 </span></span><br><span class="line"><span class="comment">//&gt;&gt;表示右移，如果该数为正，则高位补0，若为负数，则高位补1；</span></span><br><span class="line"><span class="comment">//&gt;&gt;&gt;表示无符号右移，即若该数为正，则高位补0，而若该数为负数，则右移后高位同样补0</span></span><br><span class="line"> </span><br><span class="line">bt.<span class="built_in">test</span>(x) <span class="comment">//判断第x个位置是0还是1，也就是输出第x个位置，注意逆序</span></span><br><span class="line"></span><br><span class="line">bt.<span class="built_in">flip</span>(); <span class="comment">//将二进制每一位取反</span></span><br><span class="line">bt.<span class="built_in">flip</span>(x); <span class="comment">//将二进制第x位取反</span></span><br><span class="line">bt.<span class="built_in">set</span>(); <span class="comment">//将二进制每一位置为1 </span></span><br><span class="line">bt.<span class="built_in">set</span>(x); <span class="comment">//将第x个位置置为1</span></span><br><span class="line">bt.<span class="built_in">reset</span>(); <span class="comment">//将二进制每一位置为0</span></span><br><span class="line">bt.<span class="built_in">reset</span>(x); <span class="comment">//将第x个位置置为0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">bt.<span class="built_in">size</span>() <span class="comment">//二进制数组的长度，就是定义的长度</span></span><br><span class="line">bt.<span class="built_in">count</span>(); <span class="comment">//查询二进制数组中，1的个数</span></span><br><span class="line">string str = bt.<span class="built_in">to_string</span>(); <span class="comment">//将二进制数组转化为字符串</span></span><br></pre></td></tr></table></figure>
+
+</div>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2025-11-12</span>
+            
+                <span>该篇文章被 Apeiron</span>
+            
+            
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/ACM/'>
+                            ACM
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/ACM/CF-1/'>CF-1</a></span>
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/ACM/ACM-template/">ACM-template</a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+
+     
+</div>
+
+
+
+
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 2025 ❤ Apeiron 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🔮There is no end, only extending.🔮</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: false, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options1); // 修复选择器
+    }
+    
+</script>
+
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>
