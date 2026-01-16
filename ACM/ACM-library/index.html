@@ -209,7 +209,7 @@
                     
                         &nbsp; | &nbsp;
                     
-                    <span>阅读估时：12分钟</span>
+                    <span>阅读估时：13分钟</span>
                 
                 
                     
@@ -338,7 +338,7 @@
 
 <h6 id="2-priority-queue-调用"><a href="#2-priority-queue-调用" class="headerlink" title="(2) priority_queue 调用"></a>(2) priority_queue 调用</h6><p>priority_queue容器相当于大根堆（或者小根堆）</p>
 <p>大根堆每次堆顶是最大元素，小根堆每次堆顶是最小元素</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">priority_queue&lt;<span class="type">int</span>&gt; q;                             <span class="comment">//生成大根堆</span></span><br><span class="line">priority_queue&lt;<span class="type">int</span>, vector&lt;<span class="type">int</span>&gt;, greater&lt;<span class="type">int</span>&gt;&gt; q;  <span class="comment">//生成小根堆</span></span><br><span class="line"></span><br><span class="line">q.<span class="built_in">push</span>(<span class="number">2</span>); <span class="comment">//把一个元素插入堆底部</span></span><br><span class="line">q.<span class="built_in">pop</span>(); <span class="comment">//删除堆顶的元素</span></span><br><span class="line"></span><br><span class="line">q.<span class="built_in">top</span>(); <span class="comment">//返回堆顶元素 </span></span><br><span class="line">q.<span class="built_in">empty</span>();</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">priority_queue&lt;<span class="type">int</span>&gt; q;                             <span class="comment">//生成大根堆（根为最大值）</span></span><br><span class="line">priority_queue&lt;<span class="type">int</span>, vector&lt;<span class="type">int</span>&gt;, greater&lt;<span class="type">int</span>&gt;&gt; q;  <span class="comment">//生成小根堆</span></span><br><span class="line"></span><br><span class="line">q.<span class="built_in">push</span>(<span class="number">2</span>); <span class="comment">//把一个元素插入堆底部</span></span><br><span class="line">q.<span class="built_in">pop</span>(); <span class="comment">//删除堆顶的元素</span></span><br><span class="line"></span><br><span class="line">q.<span class="built_in">top</span>(); <span class="comment">//返回堆顶元素 </span></span><br><span class="line">q.<span class="built_in">empty</span>();</span><br></pre></td></tr></table></figure>
 
 <h6 id="3-deque-调用"><a href="#3-deque-调用" class="headerlink" title="(3) deque 调用"></a>(3) deque 调用</h6><p>与vector相比，deque在头部增删元素仅需要 O(1)的时间</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">dq.<span class="built_in">front</span>();<span class="comment">//头尾元素</span></span><br><span class="line">dq.<span class="built_in">back</span>();</span><br><span class="line"></span><br><span class="line">dq.<span class="built_in">begin</span>();<span class="comment">//迭代器</span></span><br><span class="line">dq.<span class="built_in">end</span>();</span><br><span class="line"></span><br><span class="line">dq.<span class="built_in">push_front</span>(<span class="number">2</span>); <span class="comment">//头插入 </span></span><br><span class="line">dq.<span class="built_in">push_back</span>(<span class="number">2</span>); <span class="comment">//尾插入 </span></span><br><span class="line"></span><br><span class="line">dq.<span class="built_in">pop_front</span>(); <span class="comment">//头删除</span></span><br><span class="line">dq.<span class="built_in">pop_back</span>(); <span class="comment">//尾删除</span></span><br><span class="line"></span><br><span class="line">dq.<span class="built_in">empty</span>();</span><br><span class="line">dq.<span class="built_in">clear</span>();</span><br></pre></td></tr></table></figure>
@@ -389,11 +389,11 @@
     
             <div class="post-footer-pre-next">
                 
-                    <span>上一篇：<a href='/ACM/ACM-template/'>ACM-template</a></span>
+                    <span>上一篇：<a href='/ACM/CF-1/'>CF-1</a></span>
                 
 
                 
-                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/ACM/CF-0/">CF-0</a>
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/ACM/ACM-template/">ACM-template</a>
                     </span>
                 
             </div>
